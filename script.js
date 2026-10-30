@@ -18,6 +18,12 @@ function getHumanChoice(hand) {
     return humanChoice;
 }
 
+// Track of the players score
+let humanScore = 0;
+let computerScore = 0;
+
+
+
 
 
 
