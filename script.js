@@ -12,8 +12,11 @@ function getComputerChoice(max) {
     } 
 }
 
-getComputerChoice(3);
-
+// Player Input
+function getHumanChoice(hand) {
+    let humanChoice = prompt("Which hand?");
+    return humanChoice;
+}
 
 
 
