@@ -25,8 +25,26 @@ let computerScore = 0;
 // Logic for playing round by round
 function playround(humanChoice, computerChoice) {
     
+    if (humanChoice === computerChoice) {
+        humanScore++;
+        computerScore++;
+    }
+    if (
+        (humanChoice === "rock" && computerChoice === "scissors") ||
+        (humanChoice === "paper" && computerChoice === "rock") ||
+        (humanChoice === "scissors" && computerChoice === "paper")
+    ) {
+        humanScore++;
+    }
+    else {
+        computerScore++;
+    }
 }
 
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playround(humanSelection, computerSelection);
 
 
 
