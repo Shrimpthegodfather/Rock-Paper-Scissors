@@ -1,6 +1,6 @@
 // Generates a random choice of ROCK, PAPER, and SCISSORS by the computer
-function getComputerChoice(max) {
-    let computerChoice = Math.floor(Math.random() * max);
+function getComputerChoice() {
+    let computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice === 0) {
         return console.log("rock");
     }
@@ -13,7 +13,7 @@ function getComputerChoice(max) {
 }
 
 // Player Input
-function getHumanChoice(hand) {
+function getHumanChoice() {
     let humanChoice = prompt("Which hand?").toLowerCase();
     return humanChoice;
 }
@@ -22,7 +22,10 @@ function getHumanChoice(hand) {
 let humanScore = 0;
 let computerScore = 0;
 
-
+// Logic for playing round by round
+function playround(humanChoice, computerChoice) {
+    
+}
 
 
 
